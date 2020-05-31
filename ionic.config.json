@@ -1,5 +1,7 @@
 {
   "name": "GESTURES",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

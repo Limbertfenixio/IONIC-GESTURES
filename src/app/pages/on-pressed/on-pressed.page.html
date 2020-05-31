@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>onPressed</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div  #press style="width: 100%; height: 100%; background: green;">
+    <p>{{power}}</p>
+    Presiona
+    <ion-button (click)="po()"> Press Me </ion-button>
+  </div>
+</ion-content>

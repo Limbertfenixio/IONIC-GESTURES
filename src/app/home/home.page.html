@@ -13,8 +13,24 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-list>
+    <ion-item (click)="goDoubleClick()">
+      <ion-label>Double Click</ion-label>
+    </ion-item>
+     <ion-item (click)="goOnPresed()">
+      <ion-label>OnPressed</ion-label>
+    </ion-item>
+    <ion-item (click)="goSwipe()">
+      <ion-label>Swipe</ion-label>
+    </ion-item>
+    <ion-item (click)="goSlideDrawer()">
+      <ion-label>Slide Drawer</ion-label>
+    </ion-item>
+    <ion-item (click)="goPinch()">
+      <ion-label>Pinch</ion-label>
+    </ion-item>
+    <ion-item (click)="goDragDrop()">
+      <ion-label>Drag & Drop</ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>

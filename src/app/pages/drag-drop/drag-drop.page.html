@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>drag-drop</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-drop (elementDroped)="dropped($event)"></app-drop>
+  <app-draggable *ngFor="let card of cards" [drop-data]="card"></app-draggable>
+</ion-content>
